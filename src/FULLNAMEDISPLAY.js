@@ -20,8 +20,8 @@ const Fullnamedisplay = () => {
   
     event.preventDefault();
     setFull(first + ' ' + last);
-    setFirst("")
-    setLast("")
+    // setFirst("")
+    // setLast("")
   }
  
   
