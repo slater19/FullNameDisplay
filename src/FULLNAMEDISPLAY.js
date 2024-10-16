@@ -46,7 +46,7 @@ const Fullnamedisplay = () => {
         </button>
         </form>
         
-        {full.length>0?<p>Full Name:{full}</p>:""}
+        {full.length>0?<p>Full Name: {full}</p>:""}
         
         
         </>
