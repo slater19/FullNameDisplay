@@ -40,12 +40,12 @@ const Fullnamedisplay = () => {
         <input type="text"  value={last} onChange={handleLast} required/></div >
         
         
-        <br/>
+        
         <button type='submit' >
         Submit
         </button>
         </form>
-        <br/>
+        
         {full.length>0?<p>Full Name:{full}</p>:""}
         
         
