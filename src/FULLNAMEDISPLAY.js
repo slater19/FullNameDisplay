@@ -20,6 +20,8 @@ const Fullnamedisplay = () => {
   
     event.preventDefault();
     setFull(first + ' ' + last);
+    setFirst("")
+    setLast("")
   }
  
   
@@ -28,28 +30,23 @@ const Fullnamedisplay = () => {
     <>
         <h1>Full Name Display</h1>
         
-        <form id="form-id" >
+        <form id="form-id"onSubmit={handleSubmit} >
         <div>
         <span >First Name:</span>
-        <input type="text"           value={first}
-                  onChange={handleFirst}
-          
-          required
-        ></input></div>
+        <input type="text" value={first} onChange={handleFirst} required/>
+        </div>
         <div >
         <span >Last Name:</span>
-        <input type="text"            value={last}
-                  onChange={handleLast}
-          
-        required></input></div >
+        <input type="text"  value={last} onChange={handleLast} required/></div >
         
         
         <br/>
-        <button type='submit' onClick={handleSubmit}>
+        <button type='submit' >
         Submit
-        </button></form>
+        </button>
+        </form>
         <br/>
-        {first.length>0 && last.length>0 && full.length>0?<p>Full Name:{full}</p>:""}
+        {full.length>0?<p>Full Name:{full}</p>:""}
         
         
         </>
