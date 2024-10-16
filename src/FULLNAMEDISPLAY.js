@@ -18,7 +18,7 @@ const Fullnamedisplay = () => {
   }
   const handleSubmit  = (event) => {
   
-    // event.preventDefault();
+    event.preventDefault();
     setFull(first + ' ' + last);
   }
  
